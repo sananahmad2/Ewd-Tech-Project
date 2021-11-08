@@ -1,0 +1,92 @@
+#content-animation .accred-swiper img {
+  max-width: 14rem;
+}
+#content-animation .swiper-slide span {
+  font-weight: 600;
+  font-size: 80%;
+}
+#hover-boxes .single {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  height: 100%;
+  transition: 0.4s all;
+}
+#hover-boxes .single:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#00b3ff, #0077d5);
+  z-index: 0;
+  transition: 0.4s all;
+  opacity: 0;
+}
+#hover-boxes .single .inner {
+  position: relative;
+  z-index: 1;
+}
+#hover-boxes .single svg {
+  height: 5rem;
+  fill: url(#svgGradient);
+  margin-bottom: 2rem;
+  transition: 0.4s all;
+}
+#hover-boxes .single h4 {
+  font-weight: 400;
+  color: #717171;
+}
+#hover-boxes .single p {
+  color: #717171;
+}
+#hover-boxes .single:hover,
+#hover-boxes .single:hover h4,
+#hover-boxes .single:hover p {
+  color: #fff;
+  box-shadow: 0 30px 90px rgba(181, 8, 205, 0.1);
+}
+#hover-boxes .single:hover svg,
+#hover-boxes .single:hover svg path {
+  stroke: #fff;
+}
+#hover-boxes .single:hover:before {
+  opacity: 1;
+}
+.ring-col::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  background-size: contain;
+  background-image: url(https://www.cbwebsitedesign.co.uk/wp-content/uploads/2020/01/3spos-circle-2.png);
+  background-repeat: no-repeat;
+}
+.pos-relative {
+  position: relative;
+}
+#smoothie-cta {
+  color: #fff;
+  text-align: center;
+}
+#smoothie-cta .smoothie-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#smoothie-cta .container {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+#smoothie-cta a {
+  pointer-events: all;
+}

@@ -1,0 +1,46 @@
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans'); */
+
+
+
+.square{
+  /* width: 460px;
+	height: 430px; */
+	background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #D9DBDF;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+
+.mask{
+  border-radius: 4px;
+  position: absolute;
+}
+
+/* img{
+  width: 460px;
+  } */
+
+.h1{
+  margin: auto;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #009bee;
+  padding-bottom: 12px;
+}
+.blog_para{
+ text-align: justify; 
+ padding-right: 30px;
+ font-size: 15px;
+ color: #222;
+ line-height: 18px;
+}
+
+.blog_cards{
+    padding: 15px;
+}
+.h5, h5 {
+    font-size: 2.25rem;
+}
