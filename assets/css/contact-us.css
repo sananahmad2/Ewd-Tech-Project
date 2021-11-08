@@ -1,0 +1,82 @@
+#contact-map #map {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+#contact-map #map:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(90deg, rgba(0, 164, 154, 1) 0%, rgba(3, 65, 206, 1) 32%, rgba(3, 47, 107, 1) 61%, rgba(40, 1, 56, 1) 100%); */
+  background: radial-gradient(#00b3ff, #0077d5);
+  opacity: 0.9;
+  mix-blend-mode: screen;
+  z-index: 1;
+  pointer-events: none;
+}
+#contact-page .graphic {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 42%);
+  transform: translate(-50%, 42%);
+  max-width: 54vw;
+}
+@media (max-width: 64.0525em) {
+  #contact-page .graphic {
+    display: none;
+  }
+}
+#contact-page #contact-form {
+  position: relative;
+}
+#contact-page .half:not(.field) {
+  padding: 10%;
+}
+#contact-page h1,
+#contact-page h2 {
+  margin-bottom: 1em;
+}
+#contact-page .address {
+  margin-top: 3rem;
+}
+#contact-page .address h6 {
+  display: inline-block;
+  color: #111;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid #ff1053;
+}
+#contact-page .links {
+  margin-top: 3rem;
+}
+#contact-page .links svg {
+  width: 2rem;
+  fill: url(#svgGradient);
+  margin-right: 15px;
+}
+#contact-page .links a {
+  color: #111;
+  font-weight: 400;
+}
+#contact-page .links a:hover {
+  opacity: 0.7;
+}
+.project-Info{
+  margin-top: 1em;
+}
+.select{
+  border-bottom: 1px solid black;
+  border-width: 0 0 0.9px;
+  border-style: solid;
+      height: 36px;
+      border-right: 0px;
+      border-right: 0 px;
+      border-left: 0px;
+      border-top: 0px;
+  
+}

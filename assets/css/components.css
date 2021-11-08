@@ -1,0 +1,119 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/98e3f6/000000000000000077359562/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("woff2"),
+        url(https://use.typekit.net/af/98e3f6/000000000000000077359562/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("woff"),
+        url(https://use.typekit.net/af/98e3f6/000000000000000077359562/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/e4b1a9/000000000000000077359571/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff2"),
+        url(https://use.typekit.net/af/e4b1a9/000000000000000077359571/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff"),
+        url(https://use.typekit.net/af/e4b1a9/000000000000000077359571/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/d45b9a/000000000000000077359577/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/d45b9a/000000000000000077359577/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff"),
+        url(https://use.typekit.net/af/d45b9a/000000000000000077359577/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/6cc429/00000000000000007735957a/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/6cc429/00000000000000007735957a/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format("woff"),
+        url(https://use.typekit.net/af/6cc429/00000000000000007735957a/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima-nova;
+    src: url(https://use.typekit.net/af/56b0cd/00000000000000007735957d/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff2"),
+        url(https://use.typekit.net/af/56b0cd/00000000000000007735957d/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff"),
+        url(https://use.typekit.net/af/56b0cd/00000000000000007735957d/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.tk-proxima-nova {
+    font-family: "proxima-nova", sans-serif;
+}
+#hero {
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0,164,154,1) 0%, #00b3ff 32%, rgba(3,47,107,1) 61%, #0077d5 100%);
+}
+
+#hero .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#hero .video-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#hero .video-bg video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#hero .lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background-attachment: fixed;
+    opacity: 0.7;
+}
+
+#hero .content {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#hero .content h3 {
+    font-weight: 300;
+}
+
+#hero .content a {
+    pointer-events: all;
+}
+
+#hero p {
+    font-size: 2.2rem;
+}
+
+#hero .buttons a:not(:last-child) {
+    margin-right: 3rem;
+}
+
